@@ -1,9 +1,13 @@
 To reproduce:
 
-* git clone https://github.com/martinbonnin/konan-cc
-* cd konan-cc
-* git checkout 5e8a41a
-* ./gradlew assemble
+```
+git clone https://github.com/martinbonnin/konan-cc
+cd konan-cc
+git checkout 5e8a41a
+# delete your local .konan folder
+rm -rf ~/.konan
+./gradlew assemble
+```
 
 Output:
 
