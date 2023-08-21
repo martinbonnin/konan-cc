@@ -2,7 +2,7 @@ To reproduce:
 
 * git clone https://github.com/martinbonnin/konan-cc
 * cd konan-cc
-* git checkout 49905000ecad1515f773864f58217aa9108ce0ce
+* git checkout 5e8a41a
 * ./gradlew assemble
 
 Output:
