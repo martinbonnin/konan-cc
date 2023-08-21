@@ -3,7 +3,7 @@ To reproduce:
 ```
 git clone https://github.com/martinbonnin/konan-cc
 cd konan-cc
-git checkout 5e8a41a
+git checkout fe3b1f2
 # delete your local .konan folder
 rm -rf ~/.konan
 ./gradlew assemble
@@ -64,4 +64,19 @@ Execution failed for task ':compileMacosMainKotlinMetadata'.
 
 ```
 
-Re-running the task works well
+Re-running the task works well although displays a suspicious warning about CC:
+
+```
+$ ./gradlew assemble
+Calculating task graph as configuration cache cannot be reused because the file system entry '../../.konan/kotlin-native-prebuilt-macos-aarch64-1.9.0/konan/lib/kotlin-native-compiler-embeddable.jar' has been created.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 620ms
+12 actionable tasks: 12 up-to-date
+Configuration cache entry stored.
+```
